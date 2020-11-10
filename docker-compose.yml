@@ -5,7 +5,7 @@ services:
   neo4j:
     image: neo4j
     volumes:
-      - $HOME/neo4j/data:/data
+      - ./data:/data
     environment:
       NEO4J_AUTH: neo4j/secret
     ports:
